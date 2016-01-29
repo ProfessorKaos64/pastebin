@@ -1,0 +1,32 @@
+Source: pastebin
+Maintainer: Morrolan <morrolan@me.com>
+Section: python
+Priority: optional
+Build-Depends: python-setuptools (>= 0.6b3), python-all (>= 2.6.6-3), debhelper (>= 9)
+Standards-Version: 3.9.1
+
+Package: python-pastebin
+Architecture: all
+Depends: ${misc:Depends}, ${python:Depends}
+Description: Python Pastebin API interaction object.
+ ============
+ Pastebin API
+ ============
+ About
+ -----
+ .
+ The package allows you to communicate directly with Pastebin.com from your Python application, either logged in or anonymously. This can be handy 
+ .
+ for a number of reasons - dumping error logs before an abort, regular web based status updates, but can't be bothered getting a web-server running etc.
+ .
+ It allows you to do everything the API allows, which is:
+ .
+ - Paste, either logged in or anonymously
+ - 200+ selectable languages for syntax highlighting
+ - Set expiry times on pastes
+ - Set public/private/unlisted status for pastes
+ - See trending pastes
+ - See pastes by a particular user
+ - Delete your pastes
+ - Retrieve your user details
+
